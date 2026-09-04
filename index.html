@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Urvashi official Website💞🧿</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            text-align: center;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            font-family: Arial;
+            line-height: 1.6;
+            transition: background 0.5, color 0.5s;
+            background-size: 200% 200%;
+            animation: gradientMove 6s ease infinte;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 10px;
+            color: purple;
+            font-weight: bold;
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: purple;
+            color: white;
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+        h1 {
+            text-align: center; 
+            color: purple;
+            font-size: 40px;
+            text-shadow: 2px 2px 8px rgba(128, 0, 128, 0.5);
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            display: block;
+            animation: typing 3s steps(30, end) forwards, headingGlow 2s ease-in-out infinite alternate; 
+        }
+        h2 { 
+            color: #6a1b9a;
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 5px rgba(128, 0, 128, 0.3);
+            position: relative;
+            display: inline-block;
+        }
+        .contact {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 15px;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.6px;
+            margin-top: 0;
+            letter-spacing: 0.5px;
+        }
+        button {
+            background-color: purple;
+            color: White;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size:  16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: darkviolet;
+            cursor; pointer;
+            transform: scale(1.05);
+        }
+        img {
+            width: 200px;
+            border-radius: 40%;
+            border: 4px solid white;
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px gray;
+            transition: 0.3s;
+        }
+        img.hover {
+            transform: scale(1.05);
+        }
+        section {
+            background: transparent;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 15px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            backgroup-filter: blur(10px);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            transition: 0.3s;
+        }
+        .project-box {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid #eee;
+        }    
+        .project-box h3 {
+            color: purple;
+            margin-bottom: 8px;
+        }
+        .project-box:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+        .about-me {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 15px;
+            max-width: 600px;
+        }
+        .skills {
+            text-align: center;
+            margin: 20px;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            line-height: 1.5;
+            min-height: 100px;
+            margin: 15px auto;
+            border-radius: 15px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            transition: 0.3s;
+        }
+        .skill-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            margin: 0;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            line-height: 1.6;
+:        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2: :after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #6a1b9a;
+            margin: 6px auto 0;
+            border-radius: 5px;
+        }
+        button {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition:0.3s;
+        }
+        button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 15px rgba(128, 0, 128, 0.5);
+        }
+        section {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .goals-container p {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 15px;
+            max-width: 500px;
+            transition: 0.3s;
+        }
+        .goals-container p:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 12px rgba(128, 0, 128, 0.4);
+        }
+        .thanks {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        @media (max-width: 600px) {
+            .card,
+            .project-box,
+            .skill-card {
+                width: 90%;
+                margin: 15px auto;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+        }
+        @keyframes typing {
+            from {
+                clip-path: inset(0 100% 0 0);
+            }
+            to {
+                clip-path: inset(0 0 0 0);
+            }
+        }
+        img {
+            width: 180px;
+            border-radius: 50%;
+            border: 4px solid purple;
+            box-shadow: 0 6px 18px rgba(128, 0, 128, 0.3);
+            transition: transform 0.4s ease;
+        }
+        img.hover { 
+            transform: scale(1.08) rotate(2deg);
+        }
+        h3 {
+            color: purple;
+            animation: nameGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes nameGlow {
+            0% {
+                transform: scale(1);
+                text-shadow: none;
+            }
+            
+            50% {
+                transform: scale(1.08);
+                color: deeppink;
+                text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+            }
+
+            100% {
+                transform: scale(1);
+                text-shadow: none;
+            }
+        }
+        .card h2 {
+            animation: headingGlow 0.5s ease-in-out infinite;
+        }
+
+        @keyframes headinGlow {
+            0% {
+                transform: scale(1);
+                text-shadow: none;
+            }
+
+            50% {
+                transform: scale(1.05);
+                color: deeppink;
+                text-shadow: 0 0 10px rgba(255, 0, 147, 0.5);
+            }
+
+            100% {
+                transform: scale(1);
+                text-shadow: none;
+            }
+        }    
+        body.dark {
+            background: #222 !important;
+            color: white !important;
+        }
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-postion: 0% 50%;
+            }
+        }
+        @keyframes cardAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 30px;
+                letter-spacing: 1px;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            nav a {
+                font-size: 14px;
+            }
+            .skill-card {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <h1 style="color: purple;"> Welcome to my website💖</h1>
+    <p id="surprise"></p>
+    <p>I am learning coding!</p>
+    <p>✨ Exploring creativity through code and design.</p>
+    <button onclick="alert('Welcome to Urvashi website!💞 Have a great day!✨')">Click Me</button>
+    <img src="2newphoto.jpg.JPEG" alt="My photo">
+    <h3>Urvashi Chaudhary</h3>
+    <div class="card">
+    <h2 id="about">About Me</h2>
+    <p>Hi! My name is Urvashi Chaudhary. I am learning coding and creating my first website.</p>
+    </div>
+    <div class="card">
+    <h2 id="hobbies">My Hobbies🎨💞</h2>
+    <p> I love dancing, listening to music and sketching.</p>
+    <p>✨ Creativity is something I enjoy every day.</p>
+    </div>
+    <div class="card">
+    <h2 id="favourite">My Favourite🎵</h2>
+    <p>I love music, movies and spending time with my favourite people.</p>
+    <p>🎵 Music, Movies and Good Memories</p>
+    </div>
+    <div class="card">
+    <h2 id="skills">My Skills💻</h2>
+    <p>I am learning HTML and CSS and basic web designing.</p>
+    <p>HTML, CSS and Basic Web Designing</p>
+    </div>
+    <h2>My Projects</h2>
+
+    <div class="project-box">
+        <h3>💻 My First Website</h3>
+        <p>This is my first website created using HTML and CSS. I am learning how to design and build websites.</p> 
+        <small>HTML • CSS</small>
+        </div>
+
+    <div class="project-box">
+        <h3>🌐 My Portfolio</h3>
+        <p>A simple portfolio website  to showcase my skills, creativityand learning journey.</p>  
+          </div>
+
+    <section class="slills">
+        <h2 id="skills">My Skills</h2>
+        
+        <div class="skill-card">
+            <h3>💻 HTML</h3>
+            <p>Creating the structure of websites.</p>
+        </div>
+        
+        <div class="skill-card">
+            <h3>🎨 CSS</h3>
+            <p>Designing and styling websites.</p>
+        </div>
+        
+        <div class="skill-card">
+            <h3>🖌️ Canva</h3>
+            <p>Creating creative designs and graphics.</p>
+        </div>
+        
+        <div class="skill-card">
+            <h3>✨ Creativity</h3>
+            <p>Coming up with new and creative ideas.</p>
+        </div>
+    </section>
+    <p id="message"></p>
+    <nav>  
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#favourite">Favourite</a>
+        <a href="#skills">Skills</a>
+    </nav>
+    <script>
+        function changeButton() {
+            document.querySelector("button").innerHTML = "You clicked me!🎉";
+        } 
+
+        function showSurprise() {
+            document.getElementById("surprise").innerHTML = 
+               "✨ You are doing amazing! Keep learning and keep shining! 💜";
+        }
+        
+        function changeMode() {
+           if (document.body.dataset.mode === "dark") {
+               document.body.style.background = "";
+               document.body.style.color = "";
+               document.body.dataset.mode = "";
+               document.getElementById("modeButton").innerHTML = "🌞 Light Mode";
+           } else {
+               document.body.style.background = "#1e1b2e";
+               document.body.style.color = "white";
+               document.body.dataset.mode = "dark";
+               document.getElementById("modeButton").innerHTML = "🌙 Dark Mode";
+           }
+        }
+    </script>
+    <div class="card">
+    <h2 id="goals">My Goals</h2>
+
+    <div class="goals-container">
+    <p>🎯 I want to learn new skills.</p>
+    <P>💻 I want to improve my coding.</P>
+    <P>🌟 I want to create amazing websites.</P>
+    </div>
+
+    <div class="card">
+        <h2 id="contact" class="contact">Contact Me</h2>
+
+        <p>You can contact me through my website.</p>
+        <p>Email: <a href="mailto:Urvashich2328@gmail.com">urvashich2328@gmail.com</a></p>
+        <p class="thanks">Thanks for visiting my website! 💜</p>
+        <p>© 2026 Urvashi's Website</p>
+        <a href="#about"><button>About Me</button></a>
+        <a href="#skills"><button>My Skills</button></a>
+        <a href="#contact"><button>Contact Me</button></a>
+        <a href="#top"><button>⬆️ Back to Top</button></a>
+    </div>
+    <button id="modeButton" onclick="changeMode()">🌙 Dark Mode</button>
+</body>
+</html>
